@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina Inventario Productos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="color: white ; background-color: blue">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb"><strong>Inventario Productos</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="product-form" class="row just-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="cantidad" >Cantidad</label>
+                    <input class="form-control" id="cantidad" type="text" placeholder="Cantidad Producto">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="producto" >Producto</label>
+                    <input class="form-control" id="producto" type="text" placeholder="Ingresa Producto">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="precio">Precio</label>
+                    <input class="form-control" id="precio" type="text" placeholder="Ingresa el precio">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="venta">Fecha venta</label>
+                    <input class="form-control" id="venta" type="text" placeholder="Fecha de Venta">
+                </div>
+                <div class="col-10 col-md-8">
+                    <input class="btn btn-success add-btn"type="submit" value="Agregar">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Cantidad</th>                            
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Fecha</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        <tr>
+                            <td>1</td>                            
+                            <td>Pepsi</td>
+                            <td>20</td>
+                            <td>01112023</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>                               
+                            <td>Maruchan</td>
+                            <td>40</td>
+                            <td>02112023</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>                               
+                            <td>Coca Cola</td>
+                            <td>75</td>
+                            <td>03112023</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Eliminar</a>
+                            </td>
+                        </tr>                                                 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
